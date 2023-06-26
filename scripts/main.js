@@ -14,7 +14,7 @@ function sendMail()
     //var senderemail = document.getElementById("message").value;
     var subject = document.getElementsByName("Subject")[0].value;
     var sendername = document.getElementsByName("name")[0].value;
-    window.location.href = "mailto:mail@example.org?subject=" + subject + " request&body="+messagebody + "%0D%0A" + sendername;
+    window.location.href = "mailto:sahilupadhye@gmail.com?subject=" + subject + " request&body="+messagebody + "%0D%0A" + sendername;
 }
 
 // Smooth scroll for links with hashes
