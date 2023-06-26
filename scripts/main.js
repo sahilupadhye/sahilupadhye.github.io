@@ -8,6 +8,15 @@ $(document).ready(function() {
   }); // initialize animate on scroll library
 });
 
+function sendMail()
+{
+    var messagebody = document.getElementsByName("message")[0].value;
+    //var senderemail = document.getElementById("message").value;
+    var subject = document.getElementsByName("Subject")[0].value;
+    var sendername = document.getElementsByName("name")[0].value;
+    window.location.href = "mailto:mail@example.org?subject=" + subject + " request&body="+messagebody + "%0D%0A" + sendername;
+}
+
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
 .click(function(event) {
